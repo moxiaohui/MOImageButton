@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <Masonry/Masonry.h>
+#import "MOImageButtonDemo-Swift.h"
 #define kScreen_Width (UIScreen.mainScreen.bounds.size.width)
 #define kMargin (4)
 
@@ -27,6 +28,18 @@
   [self createTopButton];
   // 下
   [self createBottomButton];
+  
+  UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+  [btn setTitle:@"swift版本" forState:UIControlStateNormal];
+  [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+  btn.frame = CGRectMake(0, 0, 100, 50);
+  btn.center = self.view.center;
+  [btn addTarget:self action:@selector(clickSwift) forControlEvents:UIControlEventTouchUpInside];
+  [self.view addSubview:btn];
+}
+
+- (void)clickSwift {
+  [self presentViewController:[MOImageBtnViewController new] animated:YES completion:nil];
 }
   
 #pragma mark - 图片在左边
@@ -40,8 +53,8 @@
   [btn layoutIfNeeded];
   CGFloat imgWidth = btn.imageView.bounds.size.width;
   CGFloat labWidth = btn.titleLabel.bounds.size.width;
-  btn.imageEdgeInsets = UIEdgeInsetsMake(0, kMargin, 0, 0);
   btn.titleEdgeInsets = UIEdgeInsetsMake(0, 2*kMargin, 0, kMargin);
+  btn.imageEdgeInsets = UIEdgeInsetsMake(0, kMargin, 0, 0);
   [btn mas_makeConstraints:^(MASConstraintMaker *make) {
     make.width.mas_equalTo(imgWidth + labWidth + (3 * kMargin));
   }];
@@ -78,8 +91,8 @@
   CGFloat labWidth = btn.titleLabel.bounds.size.width;
   CGFloat labHeight = btn.titleLabel.bounds.size.height;
   CGFloat width = MAX(labWidth, imgWidth);
-  btn.imageEdgeInsets = UIEdgeInsetsMake(0, 0, labHeight + 2*kMargin, 0);
   btn.titleEdgeInsets = UIEdgeInsetsMake(kMargin + imgHeight, -imgWidth, 0, 0);
+  btn.imageEdgeInsets = UIEdgeInsetsMake(0, 0, labHeight + 2*kMargin, 0);
   [btn.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
     make.centerX.mas_equalTo(0);
   }];
