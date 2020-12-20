@@ -1,0 +1,6 @@
+module Pods_MOImageButton {
+  umbrella header "Pods-MOImageButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
