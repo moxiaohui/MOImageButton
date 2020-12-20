@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		75EDE922255595A1103051EF /* libPods-MOImageButton.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BF56CC2D090B76BFB10762 /* libPods-MOImageButton.a */; };
-		821CDC452301488700F9BF07 /* MOImageBtnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821CDC442301488700F9BF07 /* MOImageBtnViewController.swift */; };
+		E03CE767258F09CE003AB8F4 /* MOImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E03CE766258F09CE003AB8F4 /* MOImageButton.m */; };
+		E03CE76B258F10F2003AB8F4 /* MOOCImageButtonsView.m in Sources */ = {isa = PBXBuildFile; fileRef = E03CE76A258F10F2003AB8F4 /* MOOCImageButtonsView.m */; };
+		E03CE76E258F11C2003AB8F4 /* MOSwiftImageButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03CE76D258F11C2003AB8F4 /* MOSwiftImageButtonsView.swift */; };
+		E03CE773258F132C003AB8F4 /* MOButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03CE772258F132C003AB8F4 /* MOButton.swift */; };
 		E0E7F39121B65FFE00D248E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E7F39021B65FFE00D248E1 /* AppDelegate.m */; };
 		E0E7F39421B65FFE00D248E1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E7F39321B65FFE00D248E1 /* ViewController.m */; };
 		E0E7F39721B65FFE00D248E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E7F39521B65FFE00D248E1 /* Main.storyboard */; };
@@ -21,8 +24,13 @@
 		09BF56CC2D090B76BFB10762 /* libPods-MOImageButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MOImageButton.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70F55D15ED6741F765FAE4DD /* Pods-MOImageButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOImageButton.release.xcconfig"; path = "Target Support Files/Pods-MOImageButton/Pods-MOImageButton.release.xcconfig"; sourceTree = "<group>"; };
 		821CDC432301488600F9BF07 /* MOImageButton-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MOImageButton-Bridging-Header.h"; sourceTree = "<group>"; };
-		821CDC442301488700F9BF07 /* MOImageBtnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOImageBtnViewController.swift; sourceTree = "<group>"; };
 		942B3CB96D3C7E0C0833F032 /* Pods-MOImageButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOImageButton.debug.xcconfig"; path = "Target Support Files/Pods-MOImageButton/Pods-MOImageButton.debug.xcconfig"; sourceTree = "<group>"; };
+		E03CE765258F09CE003AB8F4 /* MOImageButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOImageButton.h; sourceTree = "<group>"; };
+		E03CE766258F09CE003AB8F4 /* MOImageButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOImageButton.m; sourceTree = "<group>"; };
+		E03CE769258F10F2003AB8F4 /* MOOCImageButtonsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOOCImageButtonsView.h; sourceTree = "<group>"; };
+		E03CE76A258F10F2003AB8F4 /* MOOCImageButtonsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOOCImageButtonsView.m; sourceTree = "<group>"; };
+		E03CE76D258F11C2003AB8F4 /* MOSwiftImageButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOSwiftImageButtonsView.swift; sourceTree = "<group>"; };
+		E03CE772258F132C003AB8F4 /* MOButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOButton.swift; sourceTree = "<group>"; };
 		E0E7F38C21B65FFE00D248E1 /* MOImageButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOImageButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0E7F38F21B65FFE00D248E1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E0E7F39021B65FFE00D248E1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -55,6 +63,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E03CE770258F12CF003AB8F4 /* MOOCImageButton */ = {
+			isa = PBXGroup;
+			children = (
+				E03CE769258F10F2003AB8F4 /* MOOCImageButtonsView.h */,
+				E03CE76A258F10F2003AB8F4 /* MOOCImageButtonsView.m */,
+				E03CE765258F09CE003AB8F4 /* MOImageButton.h */,
+				E03CE766258F09CE003AB8F4 /* MOImageButton.m */,
+			);
+			path = MOOCImageButton;
+			sourceTree = "<group>";
+		};
+		E03CE771258F12EE003AB8F4 /* MOSwiftImageButton */ = {
+			isa = PBXGroup;
+			children = (
+				E03CE76D258F11C2003AB8F4 /* MOSwiftImageButtonsView.swift */,
+				E03CE772258F132C003AB8F4 /* MOButton.swift */,
+			);
+			path = MOSwiftImageButton;
+			sourceTree = "<group>";
+		};
 		E0E7F38321B65FFE00D248E1 = {
 			isa = PBXGroup;
 			children = (
@@ -80,7 +108,8 @@
 				E0E7F39021B65FFE00D248E1 /* AppDelegate.m */,
 				E0E7F39221B65FFE00D248E1 /* ViewController.h */,
 				E0E7F39321B65FFE00D248E1 /* ViewController.m */,
-				821CDC442301488700F9BF07 /* MOImageBtnViewController.swift */,
+				E03CE770258F12CF003AB8F4 /* MOOCImageButton */,
+				E03CE771258F12EE003AB8F4 /* MOSwiftImageButton */,
 				E0E7F39521B65FFE00D248E1 /* Main.storyboard */,
 				E0E7F39821B6600000D248E1 /* Assets.xcassets */,
 				E0E7F39A21B6600000D248E1 /* LaunchScreen.storyboard */,
@@ -198,9 +227,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0E7F39421B65FFE00D248E1 /* ViewController.m in Sources */,
+				E03CE773258F132C003AB8F4 /* MOButton.swift in Sources */,
+				E03CE76E258F11C2003AB8F4 /* MOSwiftImageButtonsView.swift in Sources */,
 				E0E7F39F21B6600000D248E1 /* main.m in Sources */,
 				E0E7F39121B65FFE00D248E1 /* AppDelegate.m in Sources */,
-				821CDC452301488700F9BF07 /* MOImageBtnViewController.swift in Sources */,
+				E03CE767258F09CE003AB8F4 /* MOImageButton.m in Sources */,
+				E03CE76B258F10F2003AB8F4 /* MOOCImageButtonsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
